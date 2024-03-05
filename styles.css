@@ -26,7 +26,7 @@ nav {
     z-index: 9999;
 }
 
-nav label, nav input, nav .home-collapsed {
+nav label, nav input, nav .home-collapsed, .icon-collapsed {
     display: none;
 }
 
@@ -194,8 +194,18 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80%;
+    font-size: 70%;
 }
+
+.tel a {
+    text-decoration: none;
+    color: black;
+}
+
+.tel a.tel-white {
+    color:white;
+}
+
 
 @media screen and (max-width: 900px) {
     nav label {
@@ -250,6 +260,18 @@ footer div {
         margin-top: 10px;
     }
 
+    .icon-collapsed {
+        display: block;
+        height: 64px;
+        margin-left: 25px;
+        position: fixed;
+        top: 20px;
+        left: 133px;
+        border-left: 1px solid #2b3543;
+        padding-left: 17px;
+        padding-top: 2px;
+    }
+
     nav .home-collapsed:hover {
         cursor: pointer;
         text-decoration: underline;
@@ -259,4 +281,9 @@ footer div {
         display: flex;
     }
     
+    main #home .town div .logo {
+        width: 200px;
+        position: relative;
+        top: 75px;
+    }
 }

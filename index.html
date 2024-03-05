@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rug Wrangler Carpet Cleaning</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rye" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <script src="./scripts.js"></script>
+</head>
+<body onload="afterLoad();">
+    <header>
+        <nav class="navigation">
+            <a class="home-collapsed" href="#home" onclick="navigate('home');">Home</a>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAAQ8TFB4fSV6Ag4Wt6/uDY192AAAAQElEQVQoz2NgIAiEXVCAAsP5/yjgOwMq//8vdIHfDO9RBX4y9KEKXGOgCUCz5SqmOzBciuEXDN9ihAc1wGANZAAX+vf+Xu8gUwAAAABJRU5ErkJggg==" width="32" height="32" alt="">
+            </label>
+            <ul class="menu">
+                <li class="homepage-link" onclick="navigate('home');"><a href="#home">Home</a></li>
+                <li><a href="#about" onclick="navigate('about');">About&nbsp;Us</a></li>
+                <li><a href="#services" onclick="navigate('services');">Services</a></li>
+                <li><a href="#pricing" onclick="navigate('pricing');">Pricing</a></li>
+                <li><a href="#contact" onclick="navigate('contact');">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main onclick="closeNavigation();">
+        <section id="home" style="display: none;">
+            <div class="town">
+                <div>
+                    <img class="logo" src="./images/rug-wrangler-logo-transparent-background.png" />
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-container">
+                    <div class="content-cell"">
+                        <div class="wrapper">
+                            <h2>Welcome to Rug Wrangler</h2>
+                            <p>Your Trusted Carpet Cleaning Experts in Cochrane and Calgary</p>
+                            <div class="button-container">
+                                <a href="#about" onclick="navigate('about');">About us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-cell"">
+                        <div class="wrapper">
+                            <h1>Best prices in town</h1>
+                            <p>Your Trusted Carpet Cleaning Experts in Cochrane and Calgary</p>
+                            <div class="button-container">
+                                <a href="#pricing" onclick="navigate('pricing');">Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="display: none;">
+            <div class="section-content">
+                <h1>About Us</h1>
+
+                <p>
+                    Welcome to Rug Wrangler, a unique blend of youthful entrepreneurial, nestled in the heart of Cochrane, Alberta. Our story begins with an extraordinary partnership between a young entrepreneur, Eli Cloutier, and his other-in-law, Michelle Sauvageau.
+                </p>
+                <P>
+                    Eli, an emerging talent in the business world, embarked on his entrepreneurial journey at the tender age of 9, founding a firewood selling company. With a keen sense for business and a relentless drive, he then ventured into the world of gourmet treats, launching a caramel subscription service at 10 years old. Each endeavor not only added to his experience but also to his resolve to make a significant impact.
+                </p>
+                <P>
+                    At 12, Eli, together with Michelle, founded Rug Wrangler. Our company is built on the foundation of Eli's youthful energy and Michelle's strategic support, creating a dynamic duo that is both ambitious and grounded.
+                </p>
+                <P>
+                    Our mission is to help reduce the cost of living and working in a clean and healthy environment. We believe in the power of combining different perspectives and experiences to offer an amazing service to our customers.
+                </p>
+                <P>
+                    Join us on our journey. From our family to yours, we promise to bring you the best of locally sourced, innovative service with a personal touch.
+                </p>
+                <P>
+                    Thank's in advance for doing business with us.
+                </p>
+            </div>
+        </section>
+        <section id="services" style="display: none;">
+            <div class="section-content">
+                <h1>Our Services</h1>
+                <P>
+                    At Rug Wrangler, we are dedicated to providing top-notch carpet cleaning, rug cleaning, and fabric furniture cleaning services for both residential and commercial clients. Our team uses the latest techniques and eco-friendly solutions to ensure your spaces are not just clean but truly revitalized. Explore our comprehensive list of services tailored to meet the needs of every client:
+                </P>
+                <h2>Residential Services</h2>
+                <ul>
+                    <li><b>Carpet Cleaning</b><br />Deep cleaning, stain removal, and revitalizing treatments to breathe new life into your carpets.</li>
+                    <li><b>Rug Cleaning</b><br />Specialized care for all types of rugs, including oriental, wool, and synthetic, ensuring they look their best and last longer.</li>
+                    <li><b>Upholstery Cleaning</b><br />Thorough cleaning of sofas, armchairs, and other fabric-covered furniture to remove dust, allergens, and stains.</li>
+                    <li><b>Pet Odor and Stain Removal</b><br />Targeted treatments to eliminate pet odors and stains, restoring freshness to your home.</li>
+                    <li><b>Allergen Reduction</b><br />Our cleaning process reduces common allergens from dust mites, pests, pollen, and pet dander to improve indoor air quality.</li>
+                </ul>
+                <h2>Commercial Services</h2>
+                <ul>
+                    <li><b>Office Carpet Cleaning</b><br />Comprehensive carpet cleaning services to maintain a clean, professional appearance and healthy work environment.</li>
+                    <li><b>Commercial Upholstery Cleaning</b><br />Cleaning and maintenance of office furniture, waiting room chairs, and fabric partitions to extend their life and keep them looking great.</li>
+                    <li><b>High-Traffic Area Cleaning</b><br />Specialized services for areas with high foot traffic to remove dirt and reduce wear and tear.</li>
+                    <li><b>Scheduled Maintenance Plans</b><br />Customized cleaning schedules designed to meet the unique needs of your business, ensuring your premises are always clean and welcoming.</li>
+                    <li><b>Eco-Friendly Cleaning Solutions</b><br />We use environmentally safe products for all our cleaning services, protecting your health and the planet.</li>
+                </ul>
+                <p>
+                    At Rug Wrangler, we are committed to excellence and customer satisfaction. Whether you need a one-time cleaning or regular maintenance, our team is ready to deliver superior service with attention to detail. Contact us today to learn more about how we can assist you in keeping your residential or commercial space clean and inviting.
+                </p>
+            </div>
+        </section>
+        <section id="pricing" style="display: none;">
+            <div class="section-content">
+                <h1>Pricing</h1>
+                <p>
+                    At Rug Wrangler, we believe in transparent pricing, exceptional service, and unparalleled value. Whether you're a homeowner or a business, we've got a cleaning solution tailored to your needs. Our pricing structure is straightforward, with no hidden fees, ensuring you know exactly what you're paying for.
+                </p>
+                <h2>Residential Services</h2>
+                <ul>
+                    <li><b>Standard Room Carpet Cleaning</b><br />Starting at $50 per room</li>
+                    <li><b>Large Room Carpet Cleaning</b><br />Starting at $75 per room</li>
+                    <li><b>Staircase Cleaning</b><br />$3 per step</li>
+                    <li><b>Area Rug Cleaning</b><br />Starting at $30 (depending on size and material)</li>
+                    <li><b>Upholstery Cleaning</b><br />Starting at $80 for a standard couch</li>
+                    <li><b>Pet Odor and Stain Treatment</b><br />Additional $15 per room</li>
+                </ul>
+                <p>
+                    Bundle discounts available for multiple services.
+                </p>
+                <h2>Commercial Services</h2>
+                <ul>
+                    <li><b>Office Carpet Cleaning</b><br />Starting at $0.25 per square foot</li>
+                    <li><b>Commercial Upholstery Cleaning</b><br />Quotes provided upon assessment</li>
+                    <li><b>Large Area Rugs and Entrance Mats</b><br />Priced on a case-by-case basis</li>
+                </ul>
+                <p>
+                    We offer competitive rates for commercial contracts and recurring services.
+                </p>
+                <h2>Additional Services</h2>
+                <ul>
+                    <li><b>Eco-Friendly Cleaning Options</b><br />Available upon request (quote provided)</li>
+                    <li><b>Protective Coating Application</b><br />Starting at $20 per room</li>
+                    <li><b>Emergency Spill Response Service</b><br />Quoted based on the situation</li>
+                </ul>
+                <p>
+                    Please note that minimum call-out charges apply. For exact quotes and to discuss our monthly maintenance packages, please contact us directly. Our team is eager to assist you in maintaining a clean and healthy environment.
+                </p>
+                <p>
+                    All services are subject to GST. Prices may vary based on the complexity of the job and the cleaning methods required. For a detailed quote, please reach out to us with the specifics of your cleaning needs.
+                </p>
+            </div>
+        </section>
+        <section id="contact" style="display: none;">
+            <div class="section-content">
+                <h1>Contact Us</h1>
+                <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible (most likely after school hours).</p>
+                <div class="vcard">
+                    Phone (call or text)<strong>: <span class="tel">367-321-5942</span></strong>
+                    <br />
+                    Email<strong>: <span class="email"><a href="mailto:contact@rug-wrangler.com?subject=Quote Request">contact@rug-wranger.com</a></span></strong>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="vcard">
+            Contact&nbsp;us&nbsp;at&nbsp;<strong><span class="tel">367-321-5942</span></strong>
+        </div>
+    </footer>
+</body>
+</html>

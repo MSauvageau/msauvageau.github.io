@@ -102,11 +102,17 @@ main #home .content {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -75px -35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-main section .section-content {
+.section-content {
     padding: 25px;
     text-align: justify;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main section .section-content ul {
@@ -120,6 +126,10 @@ main #home .content .content-container {
     flex-wrap: wrap;
     padding: 25px;
     padding-top: 50px;
+}
+
+main #home .content .content-container .content-cell:last-child {
+    margin-left: 150px;
 }
 
 main #home .content .content-container .content-cell {
@@ -187,7 +197,7 @@ footer div {
     font-size: 80%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     nav label {
     	display: block;
         float: right;
@@ -220,10 +230,12 @@ footer div {
 
     main #home .content .content-container {
         padding-top: 75px;
+        flex-direction: column;
     }
 
     main #home .content .content-container .content-cell:last-child {
-        margin-top: 20px;;
+        margin-top: 20px;
+        margin-left: 0px;
     }
 
     nav .home-collapsed {

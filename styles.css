@@ -26,7 +26,7 @@ nav {
     z-index: 9999;
 }
 
-nav label, nav input, nav .home-collapsed, .icon-collapsed {
+nav label, nav input, nav .home-collapsed, .name-collapsed {
     display: none;
 }
 
@@ -72,6 +72,7 @@ main {
 
 main #home {
     width: 100%;
+    overflow: hidden;
 }
 
 main #home .town {
@@ -210,13 +211,10 @@ footer div {
 @media screen and (max-width: 900px) {
     nav label {
     	display: block;
-        float: right;
         text-align: center;
-        width: 40px;
-        border-left: 1px solid #2b3543;
-        padding: 15px 25px 15px 25px;
+        width: 48px;
         opacity: 0.8;
-        margin-top: 10px;
+        margin-top: 3px;
     }
 
     header nav ul {
@@ -225,6 +223,7 @@ footer div {
         right: 0px;
         margin-top: 90px;
         padding: 10px;
+        font-size: 24px;
         flex-wrap: wrap;
         flex-direction: column;
         background-color: black;
@@ -238,6 +237,10 @@ footer div {
         display: none;
     }
 
+    header nav ul li a {
+        font-size: 24px;
+    }
+
     main #home .content .content-container {
         padding-top: 75px;
         flex-direction: column;
@@ -248,28 +251,20 @@ footer div {
         margin-left: 0px;
     }
 
-    nav .home-collapsed {
-        display: block;
-        float: left;
-        background-color: white;
-        color: black;
-        border-radius: 6px;
-        text-decoration: none;
-        font-size: 32px;
-        padding: 10px;
-        margin-top: 10px;
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
     }
 
-    .icon-collapsed {
+    nav .home-collapsed {
         display: block;
-        height: 64px;
-        margin-left: 25px;
-        position: fixed;
-        top: 20px;
-        left: 133px;
-        border-left: 1px solid #2b3543;
-        padding-left: 17px;
-        padding-top: 2px;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        margin-left: 15px;
     }
 
     nav .home-collapsed:hover {
@@ -279,6 +274,9 @@ footer div {
 
     nav input:checked ~ ul {
         display: flex;
+        position: fixed;
+        top: 0px;
+        box-shadow: 0px 5px 12px black;
     }
     
     main #home .town div .logo {

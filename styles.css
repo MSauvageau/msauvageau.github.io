@@ -233,10 +233,6 @@ footer div {
         z-index: 9999;
     }
 
-    header nav ul li.homepage-link {
-        display: none;
-    }
-
     header nav ul li a {
         font-size: 24px;
     }

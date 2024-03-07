@@ -99,10 +99,10 @@ main #home .town div .logo {
 main #home .content {
     height: 40%;
     width: 100%;
-    background-image: url("./images/cracks-effect-1.png");
+    background-image: url("./images/mud-effect-1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: -75px -35px;
+    background-position: -35px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -129,8 +129,8 @@ main #home .content .content-container {
     padding-top: 50px;
 }
 
-main #home .content .content-container .content-cell:last-child {
-    margin-left: 150px;
+main #home .content .content-container .content-cell:last-child, main #home .content .content-container .content-cell:nth-child(2) {
+    margin-left: 50px;
 }
 
 main #home .content .content-container .content-cell {
@@ -242,7 +242,7 @@ footer div {
         flex-direction: column;
     }
 
-    main #home .content .content-container .content-cell:last-child {
+    main #home .content .content-container .content-cell:last-child, main #home .content .content-container .content-cell:nth-child(2) {
         margin-top: 20px;
         margin-left: 0px;
     }

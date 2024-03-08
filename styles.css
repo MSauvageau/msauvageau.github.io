@@ -126,7 +126,7 @@ main #home .content .content-container {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 25px;
-    padding-top: 50px;
+    padding-top: 75px;
 }
 
 main #home .content .content-container .content-cell:last-child, main #home .content .content-container .content-cell:nth-child(2) {
@@ -148,7 +148,6 @@ main #home .content .content-container .content-cell div.wrapper {
 
 main .button-container {
     text-align: center;
-    padding-top: 20px;
 }
 
 main .button-container a {

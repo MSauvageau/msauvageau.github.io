@@ -41,6 +41,7 @@ function navigate(sectionId) {
     }
 
     window.scrollTo({ top: 0, behavior: 'auto' });
+    window.location.hash = sectionId;
 }
 
 function closeNavigation() {

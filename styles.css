@@ -267,7 +267,6 @@ footer div {
         color: white;
         text-decoration: none;
         font-size: 24px;
-        margin-left: 15px;
     }
 
     nav .home-collapsed:hover {
@@ -289,5 +288,6 @@ footer div {
     header .logo-collapsed {
         display: block;
         height: 90%;
+        cursor: pointer;
     }
 }

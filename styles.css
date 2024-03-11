@@ -63,6 +63,10 @@ header nav ul li.homepage-link a {
     border-radius: 6px;
 }
 
+header .logo-collapsed {
+    display: none;
+}
+
 main {
     margin-top: 100px;
     height: calc(100% - 200px);
@@ -76,24 +80,20 @@ main #home {
 }
 
 main #home .town {
-    height: 60%;
+    background-image: url("./images/banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 30vh;
     width: 100%;
     box-shadow: 0px 5px 12px;
 }
 
-main #home .town div {
-    background-image: url("./images/cowboy-town.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    width: 100%;
-}
-
-main #home .town div .logo {
-    width: 400px;
+main #home .town .logo {
+    height: 70%;
     position: relative;
-    top: 100px;
+    top: 45px;
+    left: 15px;
 }
 
 main #home .content {
@@ -148,6 +148,14 @@ main #home .content .content-container .content-cell div.wrapper {
 
 main .button-container {
     text-align: center;
+}
+
+.height-60 {
+    height: 60px;
+}
+
+.height-125 {
+    height: 100px;
 }
 
 main .button-container a {
@@ -274,9 +282,12 @@ footer div {
         box-shadow: 0px 5px 12px black;
     }
     
-    main #home .town div .logo {
-        width: 200px;
-        position: relative;
-        top: 75px;
+    main #home .town .logo {
+        display: none;
+    }
+
+    header .logo-collapsed {
+        display: block;
+        height: 90%;
     }
 }

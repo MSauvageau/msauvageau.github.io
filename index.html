@@ -14,6 +14,7 @@
 <body onload="afterLoad();">
     <header>
         <nav class="navigation">
+            <img class="logo-collapsed" src="./images/rug-wrangler-logo-transparent-background.png" />
             <a class="home-collapsed" href="#home" onclick="navigate('home');">Rug Wrangler</a>
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle">
@@ -31,16 +32,14 @@
     <main onclick="closeNavigation();">
         <section id="home" style="display: none;">
             <div class="town">
-                <div>
-                    <img class="logo" src="./images/rug-wrangler-logo-transparent-background.png" />
-                </div>
+                <img class="logo" src="./images/rug-wrangler-logo-transparent-background.png" />
             </div>
             <div class="content">
                 <div class="content-container">
                     <div class="content-cell"">
                         <div class="wrapper">
-                            <h2>Welcome to Rug Wrangler</h2>
-                            <p>Your Trusted Carpet Cleaning Services in Cochrane and Calgary</p>
+                            <h2 class="height-60">Welcome to Rug Wrangler</h2>
+                            <p class="height-125">Your Trusted Carpet Cleaning Services in Cochrane and Calgary</p>
                             <div class="button-container">
                                 <a href="#about" onclick="navigate('about');">About us</a>
                             </div>
@@ -48,8 +47,8 @@
                     </div>
                     <div class="content-cell"">
                         <div class="wrapper">
-                            <h1>Fair prices!</h1>
-                            <p>We will always do our best to give you the best prices</p>
+                            <h2 class="height-60">Fair prices!</h2>
+                            <p class="height-125">We will always do our best to give you the best prices</p>
                             <div class="button-container">
                                 <a href="#pricing" onclick="navigate('pricing');">Pricing</a>
                             </div>
@@ -57,8 +56,8 @@
                     </div>
                     <div class="content-cell"">
                         <div class="wrapper">
-                            <h1>Residencial and Commercial</h1>
-                            <p>We offer a broad range of residencial and commercial services</p>
+                            <h2 class="height-60">Residencial and Commercial</h2>
+                            <p class="height-125">We offer a broad range of residencial and commercial services</p>
                             <div class="button-container">
                                 <a href="#services" onclick="navigate('services');">Services</a>
                             </div>

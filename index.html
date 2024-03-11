@@ -14,7 +14,7 @@
 <body onload="afterLoad();">
     <header>
         <nav class="navigation">
-            <img  class="logo-collapsed" src="./images/rug-wrangler-logo-transparent-background.png" />
+            <img  class="logo-collapsed" onclick="navigate('home');" src="./images/rug-wrangler-logo-transparent-background.png" />
             <a class="home-collapsed" href="#home" onclick="navigate('home');">Rug Wrangler</a>
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle">
@@ -30,7 +30,7 @@
         </nav>
     </header>
     <main onclick="closeNavigation();">
-        <section id="home" style="display: none;">
+        <section id="home" class="section-content" style="display: none;">
             <div class="town">
                 <img class="logo" src="./images/rug-wrangler-logo-transparent-background.png" />
             </div>
@@ -67,7 +67,7 @@
             </div>
         </section>
         <section id="about" style="display: none;">
-            <div class="section-content">
+            <div class="section-content padding-10">
                 <h1>About Us</h1>
 
                 <p>
@@ -91,7 +91,7 @@
             </div>
         </section>
         <section id="services" style="display: none;">
-            <div class="section-content">
+            <div class="section-content padding-10">
                 <h1>Our Services</h1>
                 <P>
                     At Rug Wrangler, we are dedicated to providing top-notch carpet cleaning, rug cleaning, and fabric furniture cleaning services for both residential and commercial clients. Our team uses the latest techniques and eco-friendly solutions to ensure your spaces are not just clean but truly revitalized. Explore our comprehensive list of services tailored to meet the needs of every client:
@@ -117,7 +117,7 @@
             </div>
         </section>
         <section id="pricing" style="display: none;">
-            <div class="section-content">
+            <div class="section-content padding-10">
                 <h1>Pricing</h1>
                 <p>
                     At Rug Wrangler, we believe in transparent pricing, exceptional service, and unparalleled value. Whether you're a homeowner or a business, we've got a cleaning solution tailored to your needs. Our pricing structure is straightforward, with no hidden fees, ensuring you know exactly what you're paying for.
@@ -158,7 +158,7 @@
             </div>
         </section>
         <section id="contact" style="display: none;">
-            <div class="section-content">
+            <div class="section-content padding-10">
                 <h1>How to reach us!</h1>
                 <p>
                     Because we can't help you if you don't call us...

@@ -13,6 +13,10 @@ body {
     justify-items: center;
 }
 
+p {
+    font-family: sans-serif;
+}
+
 .max-body-width {
     max-width: 1000px;
 }
@@ -85,6 +89,13 @@ header .logo-collapsed {
     display: none;
 }
 
+.logo-small {
+    height: 48px;
+    margin-right: 12px;
+    position: relative;
+    top: 15px;
+}
+
 main {
     margin-top: 100px;
     height: calc(100% - 150px);
@@ -129,15 +140,22 @@ main #home .content {
     justify-content: space-around;
 }
 
-main section.section-content {
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main section .section-content {
     text-align: justify;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-main section.section-content ul {
+main section .section-content ul {
     text-align: left;
+    font-family: sans-serif;
 }
 
 main #home .content .content-container {
@@ -171,6 +189,10 @@ main .button-container {
 
 .height-125 {
     height: 100px;
+}
+
+ul.space-between-items li {
+    padding-bottom: 10px;
 }
 
 main .button-container a {
@@ -301,5 +323,9 @@ footer div {
         display: block;
         height: 90%;
         cursor: pointer;
+    }
+
+    .logo-small {
+        display: none;
     }
 }
